@@ -1,11 +1,14 @@
-import React from 'react';
+import React from 'react'
+import { Breadcrumbs, Title } from '../../components'
+import './Header.css'
 
-import './Header.css';
+const Header = () => {
+  return (
+    <>
+      <Breadcrumbs/>
+      <Title/>
+    </>
+  )
+}
 
-const Header = () => (
-  <div>
-    Header
-  </div>
-);
-
-export default Header;
+export default Header

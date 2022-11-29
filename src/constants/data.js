@@ -1,4 +1,4 @@
-import images from './images';
+import images from './images'
 
 const games = [
   {
@@ -14,7 +14,7 @@ const games = [
     price: '2 609',
     genre: 'Приключения',
     rate: 3,
-    publisher:'505 Games',
+    publisher: '505 Games',
     imgUrl: images.gta5
   },
   {
@@ -65,43 +65,43 @@ const games = [
     rate: 5,
     publisher: 'Dungeon Crawler',
     imgUrl: images.aragami2
-  },
-];
+  }
+]
 
 const genres = [
   {
     id: 0,
-    title: 'Экшн',
+    title: 'Экшн'
   },
   {
     id: 0,
-    title: "Приключения",
+    title: 'Приключения'
   },
   {
     id: 0,
-    title: 'Инди',
+    title: 'Инди'
   },
   {
     id: 0,
-    title: 'Карточная игра',
+    title: 'Карточная игра'
   },
   {
     id: 0,
-    title: 'Ролевая',
+    title: 'Ролевая'
   },
   {
     id: 0,
-    title: 'Стратегия',
+    title: 'Стратегия'
   },
   {
     id: 0,
-    title: 'Открытый мир',
+    title: 'Открытый мир'
   },
   {
     id: 0,
-    title: 'Казуальная',
-  },
-];
+    title: 'Казуальная'
+  }
+]
 
 const publisher = [
   {
@@ -135,7 +135,7 @@ const publisher = [
   {
     id: 0,
     title: 'Dungeon Crawler'
-  },
-];
+  }
+]
 
-export default { wines, cocktails, awards };
+export default { wines, cocktails, awards }

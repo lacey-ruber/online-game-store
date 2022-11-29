@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--dark-bg);
   height: 94px;
   padding: 1.5rem 3rem;
+  margin-bottom: var(--xs-desktop);
 }
 
 .app__navbar-logo {
@@ -56,7 +56,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
 }
 
 .app__navbar-menu li {
@@ -65,7 +64,7 @@
 }
 
 .app__navbar-menu li:hover .app__navbar-icon path {
-  fill: var(--orange)
+  fill: var(--orange);
 }
 
 .app__navbar-icon {
@@ -91,28 +90,17 @@
 
 .app__navbar-smallscreen_overlay .overlay__close {
   font-size: 24px;
-  color: var(--white);
   cursor: pointer;
   position: absolute;
   top: 33px;
   left: 20px;
 }
 
-.app__navbar-smallscreen_overlay span {
-  color: var(--white);
-  position: absolute;
-  top: 36px;
-  left: 58px;
-
-  font-size: 16px;
-line-height: 110%;
-}
-
 .overlay__burger {
   display: none;
 }
 
-.app__navbar-smallscreen-filters {
+.app__navbar-smallscreen-menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,7 +132,7 @@ line-height: 110%;
   .app__navbar-search input {
     display: none;
   }
-  
+
   .app__navbar-search img {
     margin-right: 20px;
     width: 24px;
@@ -192,3 +180,8 @@ line-height: 110%;
   }
 }
 
+@media screen and (max-width: 375px) {
+  .app__navbar {
+    margin-bottom: var(--xs-mobile);
+  }
+}

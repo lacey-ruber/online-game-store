@@ -1,31 +1,17 @@
 import React from 'react'
 
-import {
-  AboutUs,
-  Chef,
-  FindUs,
-  Footer,
-  Gallery,
-  Header,
-  Intro,
-  Laurels,
-  SpecialMenu,
-} from './container'
-import { Navbar } from './components'
+import { Footer, Header } from './container'
+import { Advantages, Navbar } from './components'
 import './App.css'
 
 const App = () => (
   <div>
     <Navbar />
-    {/* <Header /> */}
-    {/* <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Intro />
-    <Laurels />
-    <Gallery />
-    <FindUs /> */}
-    {/* <Footer /> */}
+    <div className="container">
+      <Header />
+      <Advantages />
+      <Footer />
+    </div>
   </div>
 )
 

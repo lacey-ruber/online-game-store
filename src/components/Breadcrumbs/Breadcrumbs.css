@@ -1,0 +1,27 @@
+.app__breadcrumbs {
+  margin-bottom: var(--xs-desktop);
+}
+.app__breadcrumbs-list {
+  display: flex;
+  align-items: center;
+}
+
+.app__breadcrumbs-list svg {
+  margin: 0 4px;
+}
+
+.app__breadcrumbs-list a {
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+  .app__breadcrumbs {
+    margin-bottom: var(--xs-2-mobile);
+  }
+
+  .app__breadcrumbs-list a {
+    font-size: 13px;
+  }
+}

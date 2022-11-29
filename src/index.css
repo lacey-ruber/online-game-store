@@ -3,31 +3,85 @@
 :root {
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
+
+  /* Margins */
   
---orange:#FF5C00;
---success:#25D189;
---dark-bg:#141414;
---notification:rgba(53, 114, 134, 0.3);
---light-orange:#FFB680;
---black:#000000;
---gradient-orange:linear-gradient(180deg, #FF270F 0%, #FEB101 100%);
---dark-gray:#262626;
---gradient-green:linear-gradient(180deg, #127C30 0%, #44DE93 100%);
---header-catalog:#333333;
---gradient-blue:linear-gradient(180deg, #1D23D6 0%, #5292FD 100%);
---gray:#707070;
---gradient-purple:linear-gradient(180deg, #6004B2 24.34%, #DD25CF 100%);
---light-gray:#AAAAAA;
---white:#FFFFFF;
---blackout-grad:linear-gradient(354.61deg, #141414 42.19%, rgba(20, 20, 20, 0) 95.19%);
---link:#2C80FF;
---black-grad-vertical:linear-gradient(180deg, rgba(27, 27, 27, 0) 24.65%, rgba(27, 27, 27, 0.369167) 53.81%, rgba(27, 27, 27, 0.63) 71.11%, #1B1B1B 94.59%);
---label-blue:#00FFF0;
---grad-horizontal:linear-gradient(180deg, rgba(20, 20, 20, 0) 3.92%, rgba(20, 20, 20, 0.21) 8.11%, rgba(20, 20, 20, 0.369167) 13.67%, rgba(20, 20, 20, 0.63) 40.48%, rgba(20, 20, 20, 0.81) 64.98%, #141414 94.78%);
---label-green:#00FF66;
---card-gradient-static:linear-gradient(180deg, rgba(81, 81, 81, 0) 40.55%, rgba(38, 38, 38, 0.52) 56.1%, rgba(36, 36, 36, 0.91) 72.56%, #333333 100%);
---error:#FF5353;
---card-gradient-hover:linear-gradient(180deg, rgba(81, 81, 81, 0.18) 0%, rgba(81, 81, 81, 0) 0%, rgba(38, 38, 38, 0.52) 56.1%, rgba(36, 36, 36, 0.91) 74.48%, rgba(54, 54, 54, 0.946006) 85.14%, #525252 94.97%);
+  --xl-2-desktop: 136px;
+  --xl-desktop: 80px;
+  --l-desktop: 64px;
+  --m-desktop: 40px;
+  --s-desktop: 32px;
+  --xs-desktop: 24px;
+  --xs-2-desktop: 16px;
+  --xs-3-desktop: 8px;
+
+  --xl-2-mobile: 96px;
+  --xl-mobile: 64px;
+  --l-mobile: 40px;
+  --m-mobile: 32px;
+  --s-mobile: 24px;
+  --xs-mobile: 16px;
+  --xs-2-mobile: 8px;
+  --xs-3-mobile: 4px;
+
+   /* Colors */
+
+  --orange: #ff5c00;
+  --success: #25d189;
+  --dark-bg: #141414;
+  --light-orange: #ffb680;
+  --black: #000000;
+  --dark-gray: #262626;
+  --header-catalog: #333333;
+  --gray: #707070;
+  --light-gray: #aaaaaa;
+  --white: #ffffff;
+  --link: #2c80ff;
+  --label-blue: #00fff0;
+  --label-green: #00ff66;
+  --error: #ff5353;
+  --notification: rgba(53, 114, 134, 0.3);
+  --gradient-orange: linear-gradient(180deg, #ff270f 0%, #feb101 100%);
+  --gradient-green: linear-gradient(180deg, #127c30 0%, #44de93 100%);
+  --gradient-blue: linear-gradient(180deg, #1d23d6 0%, #5292fd 100%);
+  --gradient-purple: linear-gradient(180deg, #6004b2 24.34%, #dd25cf 100%);
+  --blackout-grad: linear-gradient(
+    354.61deg,
+    #141414 42.19%,
+    rgba(20, 20, 20, 0) 95.19%
+  );
+  --black-grad-vertical: linear-gradient(
+    180deg,
+    rgba(27, 27, 27, 0) 24.65%,
+    rgba(27, 27, 27, 0.369167) 53.81%,
+    rgba(27, 27, 27, 0.63) 71.11%,
+    #1b1b1b 94.59%
+  );
+  --grad-horizontal: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0) 3.92%,
+    rgba(20, 20, 20, 0.21) 8.11%,
+    rgba(20, 20, 20, 0.369167) 13.67%,
+    rgba(20, 20, 20, 0.63) 40.48%,
+    rgba(20, 20, 20, 0.81) 64.98%,
+    #141414 94.78%
+  );
+  --card-gradient-static: linear-gradient(
+    180deg,
+    rgba(81, 81, 81, 0) 40.55%,
+    rgba(38, 38, 38, 0.52) 56.1%,
+    rgba(36, 36, 36, 0.91) 72.56%,
+    #333333 100%
+  );
+  --card-gradient-hover: linear-gradient(
+    180deg,
+    rgba(81, 81, 81, 0.18) 0%,
+    rgba(81, 81, 81, 0) 0%,
+    rgba(38, 38, 38, 0.52) 56.1%,
+    rgba(36, 36, 36, 0.91) 74.48%,
+    rgba(54, 54, 54, 0.946006) 85.14%,
+    #525252 94.97%
+  );
 }
 
 * {
@@ -37,34 +91,43 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background: var(--dark-bg);
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
 a {
   color: unset;
   text-decoration: none;
 }
 
 .slide-bottom {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    transform: translateY(-25%);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    transform: translateY(-25%);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
