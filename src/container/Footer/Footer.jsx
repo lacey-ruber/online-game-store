@@ -1,7 +1,11 @@
 import React from 'react'
+import { FooterNav, FooterCopyright } from '../../components'
 
 import './Footer.css'
 
-const Footer = () => <div>Footer</div>
+const Footer = () => <footer>
+  <FooterNav/>
+  <FooterCopyright/>
+</footer>
 
 export default Footer

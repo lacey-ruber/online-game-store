@@ -1,0 +1,11 @@
+footer {
+  margin-bottom: var(--xs-desktop);
+  border-top: 1px solid var(--gray);
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 15px;
+  }
+}
