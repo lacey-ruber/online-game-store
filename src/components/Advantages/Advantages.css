@@ -1,9 +1,8 @@
 .app__advantages {
-  margin-bottom: var(--xl-desktop);
+  margin: var(--xl-desktop) 0;
   display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-column-gap: 24px;
-/* grid-row-gap: 0px; */
 }
 
 .app__advantages-item {
@@ -61,7 +60,7 @@ line-height: 130%;
 
 @media screen and (max-width: 376px) {
   .app__advantages {
-    margin-bottom: var(--xl-mobile);
+    margin: var(--xl-mobile) 0;
   }
   .app__advantages span {
     font-size: 14px;

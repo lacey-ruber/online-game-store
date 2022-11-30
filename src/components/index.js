@@ -5,6 +5,7 @@ import Filters from './Filters/Filters'
 import Breadcrumbs from './Breadcrumbs/Breadcrumbs'
 import Title from './Title/Title'
 import Advantages from './Advantages/Advantages'
+import GamesList from './Games/GamesList'
 
 export {
   FooterNav,
@@ -13,5 +14,6 @@ export {
   Filters,
   Breadcrumbs,
   Title,
-  Advantages
+  Advantages,
+  GamesList
 }

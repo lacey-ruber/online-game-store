@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Footer, Header } from './container'
+import { Catalog, Footer, Header } from './container'
 import { Advantages, Navbar } from './components'
 import './App.css'
 
@@ -9,6 +9,7 @@ const App = () => (
     <Navbar />
     <div className="container">
       <Header />
+      <Catalog />
       <Advantages />
       <Footer />
     </div>

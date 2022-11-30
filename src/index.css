@@ -94,6 +94,7 @@
 body {
   background: var(--dark-bg);
   color: var(--white);
+  overflow-x: hidden;
 }
 
 ul {

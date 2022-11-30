@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <Breadcrumbs/>
-      <Title/>
+      <Title title="Каталог"/>
     </>
   )
 }

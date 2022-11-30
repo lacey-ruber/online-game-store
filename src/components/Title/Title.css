@@ -1,20 +1,20 @@
-.app__title {
+.heading {
   display: flex;
   margin-bottom: var(--m-desktop);
 }
 
-.app__title h1 {
+.heading h1 {
   position: relative;
   font-weight: 700;
   font-size: 36px;
   line-height: 130%;
 }
 
-.app__title h1::before {
+.heading h1::before {
   content: '876';
   position: absolute;
   top: 0;
-  left: 140px;
+  left: 103%;
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
@@ -22,21 +22,20 @@
 }
 
 @media screen and (max-width: 768px) {
-  .app__title {
+  .heading {
     margin-bottom: var(--m-desktop);
   }
 }
 
 @media screen and (max-width: 430px) {
-  .app__title {
+  .heading {
     margin-bottom: var(--m-mobile);
   }
-  .app__title h1 {
+  .heading h1 {
     font-size: 26px;
     margin-bottom: var(--m-mobile);
   }
-  .app__title h1::before {
+  .heading h1::before {
     font-size: 14px;
-    left: 100px;
   }
 }
