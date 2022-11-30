@@ -1,0 +1,27 @@
+.info-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: var(--xs-desktop);
+}
+.info-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: var(--xs-desktop);
+}
+
+@media screen and (max-width: 376px) {
+  .info-title {
+    font-size: 20px;
+    margin-bottom: var(--xs-mobile);
+  }
+  .info-subtitle {
+    font-size: 16px;
+    margin-bottom: var(--xs-mobile);
+  }
+}

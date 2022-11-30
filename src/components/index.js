@@ -6,6 +6,9 @@ import Breadcrumbs from './Breadcrumbs/Breadcrumbs'
 import Title from './Title/Title'
 import Advantages from './Advantages/Advantages'
 import GamesList from './Games/GamesList'
+import Pagination from './Pagination/Pagination'
+import InfoTitle from './Info/InfoTitle'
+import InfoSubtitle from './Info/InfoSubtitle'
 
 export {
   FooterNav,
@@ -15,5 +18,8 @@ export {
   Breadcrumbs,
   Title,
   Advantages,
-  GamesList
+  GamesList,
+  Pagination,
+  InfoTitle,
+  InfoSubtitle
 }

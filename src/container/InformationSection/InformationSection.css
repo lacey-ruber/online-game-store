@@ -1,0 +1,29 @@
+.information-section {
+  max-width: 680px;
+  margin-top: var(--xl-desktop);
+  margin-left: auto;
+  margin-right: 260px;
+}
+.information-section__paragraph:not(:last-child) {
+  margin-bottom: var(--s-desktop);
+}
+.p__opensans hr {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-width: 0px;
+}
+@media screen and (max-width: 768px) {
+  .information-section {
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .information-section {
+    margin-top: var(--m-mobile);
+  }
+  .information-section__paragraph:not(:last-child) {
+    margin-bottom: var(--s-mobile);
+  }
+}
