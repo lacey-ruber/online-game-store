@@ -5,8 +5,13 @@ import './Header.css'
 const Header = () => {
   return (
     <>
-      <Breadcrumbs/>
-      <Title title="Каталог"/>
+      <Breadcrumbs />
+      <div className='smallscreen-header-wrapper'>
+        <Title title="Каталог" />
+        <div className="filters-smallscreen">
+          <button>Показать фильтры</button>
+        </div>
+      </div>
     </>
   )
 }

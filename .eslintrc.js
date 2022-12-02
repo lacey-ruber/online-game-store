@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     semi: ['error', 'never'],
     indent: [0, 2],
+    eqeqeq: 'off',
     'react/prop-types': 0,
     'space-before-function-paren': [
       'error',

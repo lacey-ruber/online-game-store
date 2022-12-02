@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Catalog, Footer, Header, InformationSection } from './container'
+import { Catalog, Footer, Header } from './container'
 import { Advantages, Navbar } from './components'
 import './App.css'
 
@@ -10,7 +10,6 @@ const App = () => (
     <div className="container">
       <Header />
       <Catalog />
-      <InformationSection />
       <Advantages />
       <Footer />
     </div>

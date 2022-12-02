@@ -1,6 +1,5 @@
 .heading {
   display: flex;
-  margin-bottom: var(--m-desktop);
 }
 
 .heading h1 {
@@ -21,16 +20,7 @@
   color: var(--orange);
 }
 
-@media screen and (max-width: 768px) {
-  .heading {
-    margin-bottom: var(--m-desktop);
-  }
-}
-
 @media screen and (max-width: 430px) {
-  .heading {
-    margin-bottom: var(--m-mobile);
-  }
   .heading h1 {
     font-size: 26px;
     margin-bottom: var(--m-mobile);

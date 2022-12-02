@@ -77,40 +77,40 @@ const games = [
   }
 ]
 
-// const genres = [
-//   {
-//     id: 0,
-//     title: 'Экшн'
-//   },
-//   {
-//     id: 0,
-//     title: 'Приключения'
-//   },
-//   {
-//     id: 0,
-//     title: 'Инди'
-//   },
-//   {
-//     id: 0,
-//     title: 'Карточная игра'
-//   },
-//   {
-//     id: 0,
-//     title: 'Ролевая'
-//   },
-//   {
-//     id: 0,
-//     title: 'Стратегия'
-//   },
-//   {
-//     id: 0,
-//     title: 'Открытый мир'
-//   },
-//   {
-//     id: 0,
-//     title: 'Казуальная'
-//   }
-// ]
+const genres = [
+  {
+    id: 0,
+    title: 'Экшн'
+  },
+  {
+    id: 0,
+    title: 'Приключения'
+  },
+  {
+    id: 0,
+    title: 'Инди'
+  },
+  {
+    id: 0,
+    title: 'Карточная игра'
+  },
+  {
+    id: 0,
+    title: 'Ролевая'
+  },
+  {
+    id: 0,
+    title: 'Стратегия'
+  },
+  {
+    id: 0,
+    title: 'Открытый мир'
+  },
+  {
+    id: 0,
+    title: 'Казуальная'
+  }
+]
 
 // const publisher = [
 //   {
@@ -147,4 +147,4 @@ const games = [
 //   }
 // ]
 
-export default { games }
+export default { games, genres }

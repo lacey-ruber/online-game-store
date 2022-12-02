@@ -1,6 +1,7 @@
 .catalog {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .wrapper-catalog {
   display: flex;
