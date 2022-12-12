@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { VscClose, VscMenu } from 'react-icons/vsc'
 import './Navbar.css'
 import images from '../../constants/images'
+import SearchForm from '../../ui-kit/SearchForm/SearchForm'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -12,10 +13,7 @@ const Navbar = () => {
         <img src={images.logo} alt="Logo" />
         <span>turbinary</span>
       </div>
-      <div className="app__navbar-search">
-        <input type="text" />
-        <img src={images.search} alt="search" />
-      </div>
+      <SearchForm icon={images.search} className={'search-form'} />
       <ul className="app__navbar-menu">
         <li>
           <a href="#login">
@@ -101,8 +99,7 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
 
-            <div className="app__navbar-smallscreen-menu">
-            </div>
+            <div className="app__navbar-smallscreen-menu"></div>
           </div>
         </div>
       )}

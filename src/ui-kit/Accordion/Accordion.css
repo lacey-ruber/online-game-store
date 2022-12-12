@@ -15,7 +15,6 @@
 }
 .accordion-header svg {
   margin-left: 10px;
-
   transition: all 0.3s ease;
   width: 16px;
   height: 16px;
@@ -29,6 +28,7 @@
 }
 
 .accordion-content__inner {
+  position: relative;
   padding: 0 0 var(--xs-mobile) 0;
   overflow: hidden;
   color: var(--white);

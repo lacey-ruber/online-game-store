@@ -5,7 +5,7 @@ import './Advantages.css'
 
 const Advantages = () => {
   return (
-    <div className='app__advantages'>
+    <div id='#advantages' className='app__advantages'>
       <div className='app__advantages-item'>
         <img src={images.stock} alt="stock" />
         <span>Регулярные акции, скидки и бонусы</span>

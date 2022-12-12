@@ -13,7 +13,7 @@ const Accordion = ({ className, title, isActive, children }) => {
         accordion__active: isOpen
       })}
     >
-      <div className="accordion-header" onClick={handleToggleAccordion}>
+      <div className={'accordion-header'} onClick={handleToggleAccordion}>
         <div className="accordion-header__title">{title}</div>
         <svg
           width="17"

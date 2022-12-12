@@ -83,68 +83,68 @@ const genres = [
     title: 'Экшн'
   },
   {
-    id: 0,
+    id: 1,
     title: 'Приключения'
   },
   {
-    id: 0,
+    id: 2,
     title: 'Инди'
   },
   {
-    id: 0,
+    id: 3,
     title: 'Карточная игра'
   },
   {
-    id: 0,
+    id: 4,
     title: 'Ролевая'
   },
   {
-    id: 0,
+    id: 5,
     title: 'Стратегия'
   },
   {
-    id: 0,
+    id: 6,
     title: 'Открытый мир'
   },
   {
-    id: 0,
+    id: 7,
     title: 'Казуальная'
   }
 ]
 
-// const publisher = [
-//   {
-//     id: 0,
-//     title: '07th Expansion'
-//   },
-//   {
-//     id: 0,
-//     title: '505 Games'
-//   },
-//   {
-//     id: 0,
-//     title: '505 Games, All In! Games'
-//   },
-//   {
-//     id: 0,
-//     title: 'Alawar Entertainment'
-//   },
-//   {
-//     id: 0,
-//     title: 'BANDAI NAMCO Entertainment'
-//   },
-//   {
-//     id: 0,
-//     title: 'Capcom'
-//   },
-//   {
-//     id: 0,
-//     title: 'Electronic Arts'
-//   },
-//   {
-//     id: 0,
-//     title: 'Dungeon Crawler'
-//   }
-// ]
+const publisher = [
+  {
+    id: 0,
+    title: '07th Expansion'
+  },
+  {
+    id: 1,
+    title: '505 Games'
+  },
+  {
+    id: 2,
+    title: '505 Games, All In! Games'
+  },
+  {
+    id: 3,
+    title: 'Alawar Entertainment'
+  },
+  {
+    id: 4,
+    title: 'BANDAI NAMCO Entertainment'
+  },
+  {
+    id: 5,
+    title: 'Capcom'
+  },
+  {
+    id: 6,
+    title: 'Electronic Arts'
+  },
+  {
+    id: 7,
+    title: 'Dungeon Crawler'
+  }
+]
 
-export default { games, genres }
+export default { games, genres, publisher }
